@@ -9,8 +9,14 @@ module Offset = {
 
 type handlerStateChangeEventPayload = {
   //  Pan specific
-  changeX: float,
-  changeY: float,
+  x: float,
+  y: float,
+  absoluteX: float,
+  absoluteY: float,
+  translationX: float,
+  translationY: float,
+  velocityX: float,
+  velocityY: float,
   // Common
   handlerTag: int,
   numberOfPointers: int,
