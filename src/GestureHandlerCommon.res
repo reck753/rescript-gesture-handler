@@ -109,6 +109,7 @@ module Methods = (
   @send external onStart: (T.t, T.gestureStateChangeEvent => unit) => T.t = "onStart"
   @send external onEnd: (T.t, onEndCallback) => T.t = "onEnd"
   @send external onFinalize: (T.t, onFinalizeCallback) => T.t = "onFinalize"
+  @send external onUpdate: (T.t, T.gestureStateChangeEvent => unit) => T.t = "onUpdate"
   @send
   external onTouchesDown: (T.t, touchEventHandlerType) => T.t = "onTouchesDown"
   @send external onTouchesUp: (T.t, touchEventHandlerType) => T.t = "onTouchesUp"
